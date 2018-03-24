@@ -9,7 +9,7 @@ public class Main {
         System.setProperty("java.net.preferIPv4Stack","true");
 
         DistributedMap distributedMap = new DistributedMap();
-//        new UDP().setValue("mcast_group_addr", InetAddress.getByName("230.0.0.1"));
+//
         String channel = "operation";
         distributedMap.connect(channel);
 

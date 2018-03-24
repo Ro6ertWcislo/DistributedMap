@@ -1,29 +1,29 @@
 package com.company;
 
-import org.jgroups.Message;
-import org.jgroups.ReceiverAdapter;
-import org.jgroups.View;
+import org.jgroups.*;
 import org.jgroups.util.Util;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 public class MapReceiver extends ReceiverAdapter {
     private final Map<String, String> hashMap;
+    private final JChannel channel;
 
-    public MapReceiver(Map<String, String> hashMap) {
+    public MapReceiver(Map<String, String> hashMap, JChannel channel) {
         this.hashMap = hashMap;
+        this.channel = channel;
     }
 
     @Override
     public void viewAccepted(View view) {
-        super.viewAccepted(view);
-        System.out.println(view.toString());
+        handleView(channel, view);
     }
 
     public void receive(Message msg) {
@@ -49,6 +49,7 @@ public class MapReceiver extends ReceiverAdapter {
 
 
         synchronized (hashMap) {
+            hashMap.clear();
             List<String> list;
             list = (List<String>) Util.objectFromStream(new DataInputStream(input));
             list.forEach(this::processMessage);
@@ -68,6 +69,43 @@ public class MapReceiver extends ReceiverAdapter {
 
             }
 
+        }
+    }
+
+    private static void handleView(JChannel ch, View new_view) {
+        System.out.println(new_view.toString());
+        if (new_view instanceof MergeView) {
+            ViewHandler handler = new ViewHandler(ch, (MergeView) new_view);
+            // requires separate thread as we don't want to block JGroups
+            handler.start();
+        }
+    }
+
+    private static class ViewHandler extends Thread {
+        JChannel ch;
+        MergeView view;
+
+        private ViewHandler(JChannel ch, MergeView view) {
+            this.ch = ch;
+            this.view = view;
+        }
+
+        public void run() {
+            List<View> subgroups = view.getSubgroups();
+            View tmp_view = subgroups.get(0); // picks the first
+            Address local_addr = ch.getAddress();
+            System.out.println("\n\nmoj adres to" + ch.getAddress() + "\n\n");
+            if (!tmp_view.containsMember(local_addr)) {
+                System.out.println("Not member of the new primary partition ("
+                        + tmp_view + "), will re-acquire the state");
+                try {
+                    ch.getState(null, 30000);
+                } catch (Exception ex) {
+                }
+            } else {
+                System.out.println("Not member of the new primary partition ("
+                        + tmp_view + "), will do nothing");
+            }
         }
     }
 }

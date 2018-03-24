@@ -1,7 +1,6 @@
 package com.company;
 
-import org.jgroups.JChannel;
-import org.jgroups.Message;
+import org.jgroups.*;
 import org.jgroups.protocols.*;
 import org.jgroups.protocols.pbcast.GMS;
 import org.jgroups.protocols.pbcast.NAKACK2;
@@ -9,6 +8,7 @@ import org.jgroups.protocols.pbcast.STABLE;
 import org.jgroups.protocols.pbcast.STATE;
 import org.jgroups.stack.ProtocolStack;
 
+import java.net.InetAddress;
 import java.util.Map;
 
 public class MapChannel {
@@ -44,7 +44,7 @@ public class MapChannel {
     }
 
     private void initStack(ProtocolStack stack) throws Exception {
-        stack.addProtocol(new UDP())
+        stack.addProtocol(new UDP().setValue("mcast_group_addr", InetAddress.getByName("230.0.0.1")))
                 .addProtocol(new PING())
                 .addProtocol(new MERGE3())
                 .addProtocol(new FD_SOCK())
@@ -67,6 +67,9 @@ public class MapChannel {
     }
 
     public void setReceiver(Map<String,String> hashMap) {
-        channel.receiver(new MapReceiver(hashMap));
+        channel.receiver(new MapReceiver(hashMap, channel));
     }
-}
+
+
+    }
+
