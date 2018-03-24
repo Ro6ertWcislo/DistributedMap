@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84eeed99-ad74-460c-96a8-c163637e8f6a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/MapChannel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/MapReceiver.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Channel.java" afterPath="$PROJECT_DIR$/src/com/company/DistributedMap.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistributedMap/com/company/DistributedMap$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistributedMap/com/company/DistributedMap.class" afterPath="$PROJECT_DIR$/out/production/DistributedMap/com/company/DistributedMap.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistributedMap/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/DistributedMap/com/company/Main.class" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DistributedMap.java" afterPath="$PROJECT_DIR$/src/com/company/DistributedMap.java" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +24,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="557">
+              <caret line="32" column="80" lean-forward="false" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,18 +36,47 @@
       <file leaf-file-name="DistributedMap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DistributedMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="128" column="21" lean-forward="false" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+            <state relative-caret-position="36">
+              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <folding>
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1367#1368#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapChannel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/MapChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1832#1833#0" expanded="true" />
-                <element signature="e#1863#1864#0" expanded="true" />
-                <element signature="e#3045#3046#0" expanded="true" />
-                <element signature="e#3110#3111#0" expanded="true" />
-                <element signature="e#3170#3171#0" expanded="true" />
-                <element signature="e#3223#3224#0" expanded="true" />
-                <element signature="e#3274#3275#0" expanded="true" />
-                <element signature="e#3319#3320#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#1934#1935#0" expanded="true" />
+                <element signature="e#1992#1993#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapReceiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/MapReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,6 +103,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>down</find>
       <find>close</find>
     </findStrings>
   </component>
@@ -88,7 +122,9 @@
         <option value="$PROJECT_DIR$/src/com/company/Sender.java" />
         <option value="$PROJECT_DIR$/src/com/company/Receiver.java" />
         <option value="$PROJECT_DIR$/src/com/company/Channel.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MyReceiver.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MapChannel.java" />
         <option value="$PROJECT_DIR$/src/com/company/DistributedMap.java" />
       </list>
     </option>
@@ -221,12 +257,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521821717128</updated>
-      <workItem from="1521821727489" duration="8725000" />
+      <workItem from="1521821727489" duration="19845000" />
     </task>
+    <task id="LOCAL-00001" summary="changed concurrentHashMap to HashMap">
+      <created>1521892997653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521892997653</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8725000" />
+    <option name="totallyTimeSpent" value="19845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
@@ -247,18 +291,18 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -268,8 +312,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed concurrentHashMap to HashMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed concurrentHashMap to HashMap" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -277,6 +327,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/blocks/cs/ReceiverAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/Receiver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/ReceiverAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/util/ArrayIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="259" column="0" lean-forward="false" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+          <folding>
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#3640#3641#0" expanded="true" />
+            <element signature="e#3682#3683#0" expanded="true" />
+            <element signature="e#7484#7485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/Event.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/stack/ProtocolStack.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="1122" column="55" lean-forward="true" selection-start-line="1122" selection-start-column="55" selection-end-line="1122" selection-end-column="55" />
+          <folding>
+            <element signature="e#43047#43048#0" expanded="true" />
+            <element signature="e#43124#43125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/stack/Protocol.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6043">
+          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="e#12843#12844#0" expanded="true" />
+            <element signature="e#12890#12891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/ConcurrentHashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="136" column="11" lean-forward="false" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jgroups-3.6.13.Final.jar!/org/jgroups/JChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="672" column="0" lean-forward="false" selection-start-line="672" selection-start-column="0" selection-end-line="672" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -289,10 +434,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MapReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MapChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="557">
+          <caret line="32" column="80" lean-forward="false" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -301,18 +472,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DistributedMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="128" column="21" lean-forward="false" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+        <state relative-caret-position="36">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
-            <element signature="e#1863#1864#0" expanded="true" />
-            <element signature="e#3045#3046#0" expanded="true" />
-            <element signature="e#3110#3111#0" expanded="true" />
-            <element signature="e#3170#3171#0" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
-            <element signature="e#3274#3275#0" expanded="true" />
-            <element signature="e#3319#3320#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
           </folding>
         </state>
       </provider>

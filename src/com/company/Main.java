@@ -11,7 +11,6 @@ public class Main {
         DistributedMap distributedMap = new DistributedMap();
 //        new UDP().setValue("mcast_group_addr", InetAddress.getByName("230.0.0.1"));
         String channel = "operation";
-        distributedMap.receive();
         distributedMap.connect(channel);
 
 
@@ -31,7 +30,7 @@ public class Main {
             } else if (msg.startsWith("get")) {
                 System.out.println(distributedMap.get(msg.substring(4)));
             } else if (msg.startsWith("ck")) {
-                distributedMap.containsKey(msg.substring(3));
+                System.out.println(distributedMap.containsKey(msg.substring(3)));
             } else if (msg.equals("con") || msg.equals("connect")) {
                 distributedMap.connect(channel);
             } else if (msg.equals("dis") || msg.equals("disconnect")) {
