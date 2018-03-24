@@ -1,10 +1,7 @@
 package com.company;
 
-import org.jgroups.protocols.UDP;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.net.InetAddress;
 
 public class Main {
 
@@ -14,8 +11,9 @@ public class Main {
         DistributedMap distributedMap = new DistributedMap();
 //        new UDP().setValue("mcast_group_addr", InetAddress.getByName("230.0.0.1"));
         String channel = "operation";
-        distributedMap.connect(channel);
         distributedMap.receive();
+        distributedMap.connect(channel);
+
 
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
@@ -38,7 +36,10 @@ public class Main {
                 distributedMap.connect(channel);
             } else if (msg.equals("dis") || msg.equals("disconnect")) {
                 distributedMap.close();
-            } else if (!msg.equals("close"))
+            } else if(msg.equals("state")){
+                System.out.println(distributedMap.getState());
+            }
+            else if (!msg.equals("close"))
                 System.out.println("unknown command. Try again");
             else distributedMap.close();
         }
