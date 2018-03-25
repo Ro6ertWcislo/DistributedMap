@@ -39,10 +39,6 @@ public class MapChannel {
 
     }
 
-    public void close() {
-        channel.close();
-    }
-
     private void initStack(ProtocolStack stack) throws Exception {
         stack.addProtocol(new UDP().setValue("mcast_group_addr", InetAddress.getByName("230.0.0.1")))
                 .addProtocol(new PING())

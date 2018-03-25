@@ -9,9 +9,10 @@ public class DistributedMap extends ReceiverAdapter implements SimpleStringMap {
     private MapChannel channel;
     private final HashMap<String, String> hashMap = new HashMap<>();
 
-    public DistributedMap() throws Exception {
+    public DistributedMap(String channelName) throws Exception {
         channel = new MapChannel();
         channel.setReceiver(hashMap);
+        channel.connect(channelName);
     }
 
 
@@ -27,7 +28,6 @@ public class DistributedMap extends ReceiverAdapter implements SimpleStringMap {
 
     @Override
     public String put(String key, String value) {
-//        String result = hashMap.put(key, value);
         send("put " + key + " " + value);
         return value;
     }
@@ -39,6 +39,7 @@ public class DistributedMap extends ReceiverAdapter implements SimpleStringMap {
         return result;
     }
 
+    @Override
     public String getState() {
         StringBuilder sb = new StringBuilder();
         hashMap.entrySet()
@@ -47,17 +48,11 @@ public class DistributedMap extends ReceiverAdapter implements SimpleStringMap {
     }
 
 
-    public void connect(String channelName) throws Exception {
-        channel.connect(channelName);
-    }
 
     private void send(String msg) {
         channel.send(msg);
     }
 
-    public void close() {
-        channel.close();
-    }
 
 
 }

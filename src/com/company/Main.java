@@ -7,11 +7,8 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         System.setProperty("java.net.preferIPv4Stack","true");
-
-        DistributedMap distributedMap = new DistributedMap();
-//
         String channel = "operation";
-        distributedMap.connect(channel);
+        DistributedMap distributedMap = new DistributedMap(channel);
 
 
         InputStreamReader isr = new InputStreamReader(System.in);
@@ -31,16 +28,11 @@ public class Main {
                 System.out.println(distributedMap.get(msg.substring(4)));
             } else if (msg.startsWith("ck")) {
                 System.out.println(distributedMap.containsKey(msg.substring(3)));
-            } else if (msg.equals("con") || msg.equals("connect")) {
-                distributedMap.connect(channel);
-            } else if (msg.equals("dis") || msg.equals("disconnect")) {
-                distributedMap.close();
-            } else if(msg.equals("state")){
+            }else if(msg.equals("state")){
                 System.out.println(distributedMap.getState());
             }
             else if (!msg.equals("close"))
                 System.out.println("unknown command. Try again");
-            else distributedMap.close();
         }
 
     }

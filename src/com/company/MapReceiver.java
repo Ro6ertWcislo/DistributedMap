@@ -7,7 +7,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -46,8 +45,6 @@ public class MapReceiver extends ReceiverAdapter {
 
     @Override
     public void setState(InputStream input) throws Exception {
-
-
         synchronized (hashMap) {
             hashMap.clear();
             List<String> list;
@@ -68,7 +65,10 @@ public class MapReceiver extends ReceiverAdapter {
                 hashMap.remove(key);
 
             }
-
+        }
+        else if(msg instanceof Map.Entry){
+            Map.Entry<String,String> entry = (Map.Entry<String,String>) msg;
+            hashMap.put(entry.getKey(),entry.getValue());
         }
     }
 
@@ -103,7 +103,7 @@ public class MapReceiver extends ReceiverAdapter {
                 } catch (Exception ex) {
                 }
             } else {
-                System.out.println("Not member of the new primary partition ("
+                System.out.println("Member of the new primary partition ("
                         + tmp_view + "), will do nothing");
             }
         }

@@ -9,4 +9,6 @@ public interface SimpleStringMap {
     String put(String key, String value);
 
     String remove(String key);
+
+    String getState();
 }
